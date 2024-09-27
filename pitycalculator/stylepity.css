@@ -5,13 +5,13 @@
     background-color: #111111;
     position: relative;
     font-family: Arial;
-    height: 230px;
-    width: 375px;
+    height: 270px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding-left: 15px;
-    padding-right: 10px;
+    padding-right: 15px;
     padding-bottom: 15px;
     padding-top:0px;
     border-radius: 15px;
@@ -24,4 +24,39 @@
     flex-grow: 1;
     position: relative;
     font-family: Arial;
+}
+
+.submitbuttoncalc {
+    background-color: #1a1a1a;
+    border: none;
+	cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+}
+
+.titleforcalcs{
+    background-color: #a40eb5;
+    border-style: solid;
+    border: #1a1a1a;
+    font-size: 35px;
+    padding: 9px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    position: relative;
+}
+
+.inputcalc {
+    background-color: #1a1a1a;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
 }

@@ -18,16 +18,17 @@
 
     <div class="pitycalc1"> <!-- Beginning of the first calculator --> <!-- Unused tag: <?php /* echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; */ ?> -->
         <form action="pity-calc.php">
+            <h1 class="titleforcalcs">Pity Calculator</h1>
             <label for="pity">Pity:</label>
-            <input type="number" id="pity" name="pity" required><br><br>
+            <input class="inputcalc" type="number" id="pity" name="pity" required><br><br>
 
             <label for="fates">Intertwined Fates:</label>
-            <input type="number" id="fates" name="fates" required><br><br>
+            <input class="inputcalc" type="number" id="fates" name="fates" required><br><br>
 
             <label for="primogems">Primogems:</label>
-            <input type="number" id="primogems" name="primogems" required><br><br>
+            <input class="inputcalc" type="number" id="primogems" name="primogems" required><br><br>
 
-            <input class="buttonrechner" type="submit" value="Submit"><br><br>
+            <input class="submitbuttoncalc" type="submit" value="Submit"><br><br>
             
         </form>
     </div>
