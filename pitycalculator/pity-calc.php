@@ -18,9 +18,11 @@
 
 
     <div class="pitycalc1"> <!-- Beginning of the first calculator -->
-        <form action="" method="POST">
+    
+        <action="pity-calc.php">
+            <h1>Pity Calculator</h1>
             <label for="pity">Pity:</label>
-            <input type="number" id="pity" name="pity" value="<?php echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; ?>" required><br><br>
+            <input type="number" id="pity" name="pity" required><br><br>
 
             <label for="fates">Intertwined Fates:</label>
             <input type="number" id="fates" name="fates" value="<?php echo isset($_POST['fates']) ? intval($_POST['fates']) : ''; ?>" required><br><br>
@@ -29,8 +31,9 @@
             <input type="number" id="primogems" name="primogems" value="<?php echo isset($_POST['primogems']) ? intval($_POST['primogems']) : ''; ?>" required><br><br>
 
             <input class="buttonrechner" type="submit" value="Submit"><br><br>
+            
         </form>
-    <div>
+</div>
 
     <div class="wishcalc1">
         <form action="" method="POST">
@@ -53,7 +56,7 @@
     </div>
 </div>
 
-        <?php /*
+        <?php 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $pity = isset($_POST['pity']) ? intval($_POST['pity']) : 0;
             $primogems = isset($_POST['primogems']) ? intval($_POST['primogems']) : 0;
@@ -74,7 +77,7 @@
         if (isset($hardwish) && $hardwish <= 0) {
             $hardwish = abs($hardwish);
             echo "<p>Hardpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Hardpity: $hardwish</p>";
-        } */
+        } 
         ?>
 
 </body>
