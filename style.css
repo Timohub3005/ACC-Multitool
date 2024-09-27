@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: #1a1a1a;
-    /*font-family: Arial, Helvetica;*/
+    font-family: Arial, Helvetica;
 	margin: 0;
 }
 
@@ -12,6 +12,10 @@ body {
 	height: 100vh;
 }
 
+/*------------------*/
+/* Sidebar-Related  */
+/*------------------*/
+
 .sidebar {
 	height: 100%;
     width: 300px;
@@ -20,9 +24,10 @@ body {
     padding-top: 20px;
 	color: white;
 	flex-shrink: 0;
+	border-right: 1px solid #212121;
 }
 
-.sidebarbutton {
+.sidebarbutton, .sidebarbuttonopen {
     display: flex;
 	align-items: center;
 	justify-content: center;
@@ -42,34 +47,36 @@ body {
 	cursor: pointer;
 }
 
-.sidebarbutton:hover {
+.sidebarbuttonopen {
+	background-color: #a40eb5;
+}
+
+.sidebarbutton:hover, .sidebarbuttonopen:hover {
     transform: scale(1.12);
 	background-color: #111111;
 	cursor: pointer;
 }
 
-.sidebarbuttonopen {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 1;
-	color: #ffffff;
-	font-size: 24px;
-	border-radius: 10px;
-	width: 235px;
-	height: 48px;
-	font-weight: bold;
-	transition: 0.2s;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25px;
+.sidebarbuttonopen:hover {
 	background-color: #a40eb5;
-	border: none;
-	cursor: pointer;
 }
 
-.sidebarbuttonopen:hover {
-    transform: scale(1.12);
-	background-color: #a40eb5;
-	cursor: pointer;
+/*------------------*/
+/* Scrollbar		*/
+/*------------------*/
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: var();
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #444444;
 }
