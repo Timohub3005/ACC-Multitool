@@ -9,14 +9,14 @@
 <body>
 
 <div class="main-container">
-    <div class="sidebar"> <!-- Anfang von div Sidebar -->
+    <div class="sidebar"> <!-- Beginning of div Sidebar -->
         <button onclick="window.location.href='../index.html'" class="sidebarbutton">Home</button>
         <button onclick="window.location.href='../pitycalculator/pity-calc.php'" class="sidebarbuttonopen">Pity-calculator</button>
         <button onclick="window.location.href='../electric-calc/electric-calc.php'" class="sidebarbutton">Electric-calculator</button>
-    </div> <!-- Ende von div Sidebar -->
+    </div> <!-- Ending of div Sidebar -->
 
 
-    <div class="pitycalc1">
+    <div class="pitycalc1"> <!-- Beginning of the first calculator -->
     <form action="" method="POST">
         <label for="pity">Pity:</label>
         <input type="number" id="pity" name="pity" value="<?php echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; ?>" required><br><br>
@@ -31,7 +31,6 @@
 
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Daten verarbeiten
             $pity = isset($_POST['pity']) ? intval($_POST['pity']) : 0;
             $primogems = isset($_POST['primogems']) ? intval($_POST['primogems']) : 0;
             $fates = isset($_POST['fates']) ? intval($_POST['fates']) : 0;
@@ -44,19 +43,19 @@
         }
         ?>
 
-        <label for="hardpity">Wishes bis zur Hardpity:</label>
+        <label for="hardpity">Wishes until Hardpity:</label>
         <input type="text" id="hardpity" value="<?php echo isset($hardpity) ? $hardpity : ''; ?>" readonly><br><br>
 
-        <label for="softpity">Wishes bis zur Softpity:</label>
+        <label for="softpity">Wishes until Softpity:</label>
         <input type="text" id="softpity" value="<?php echo isset($softpity) ? $softpity : ''; ?>" readonly><br><br>
 
-        <label for="availablewishes">Wishes verfügbar:</label>
+        <label for="availablewishes">Wishes availabe:</label>
         <input type="text" id="availablewishes" value="<?php echo isset($fates) ? $fates : ''; ?>" readonly><br><br>
 
-        <label for="hardwish">Wishes bis zur Hardpity mit den verfügbaren Wishes:</label>
+        <label for="hardwish">Wishes until hardpity (w/ counting the availabe wishes):</label>
         <input type="text" id="hardwish" value="<?php echo isset($hardwish) && $hardwish > 0 ? $hardwish : 0; ?>" readonly><br><br>
 
-        <label for="softwish">Wishes bis zur Softpity mit den verfügbaren Wishes:</label>
+        <label for="softwish">Wishes until softpity (w/ counting the availabe wishes)</label>
         <input type="text" id="softwish" value="<?php echo isset($softwish) && $softwish > 0 ? $softwish : 0; ?>" readonly><br><br>
 
         <?php
@@ -69,7 +68,7 @@
             $hardwish = abs($hardwish);
             echo "<p>Hardpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Hardpity: $hardwish</p>";
         }
-        ?>
+        ?> <!-- Ending of the first calculator -->
     </form>
 </div>
 
