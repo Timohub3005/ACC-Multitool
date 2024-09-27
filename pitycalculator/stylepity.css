@@ -1,4 +1,6 @@
 .pitycalc1 {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f1f1f1;
+    position: relative;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<div class="main-container">
     <div class="sidebar"> <!-- Anfang von div Sidebar -->
         <button onclick="window.location.href='../index.html'" class="sidebarbutton">Home</button>
         <button onclick="window.location.href='pitycalculator/pity-calc.php'" class="sidebarbuttonopen">Pity-calculator</button>
@@ -14,7 +15,7 @@
     </div> <!-- Ende von div Sidebar -->
 
 
-
+    <div class="pitycalc1">
     <form action="" method= "POST">
         <label for="pity">Pity:</label>
         <input type="number" id="pity" name="pity" required><br><br>
@@ -28,6 +29,7 @@
         <input class="buttonrechner" type="submit" value="Berechne">
     </form>
 
+    </div>       </div>
     <?php // Anfang von PHP
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Daten verarbeiten
@@ -62,5 +64,6 @@
         }
     }
     ?> <!-- Ende von PHP -->
+
 </body>
 </html>
