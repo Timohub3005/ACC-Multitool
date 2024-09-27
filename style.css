@@ -1,7 +1,8 @@
 body {
     color: white;
     background-color: #1a1a1a;
-    font-family: Arial, Helvetica;
+    /*font-family: Arial, Helvetica;*/
+	margin: 0;
 }
 
 .main-container {
@@ -20,7 +21,6 @@ body {
 	color: white;
 	flex-shrink: 0;
 }
-
 
 .sidebarbutton {
     display: flex;
@@ -55,7 +55,7 @@ body {
 	line-height: 1;
 	color: #ffffff;
 	font-size: 24px;
-	border-radius: 15px;
+	border-radius: 10px;
 	width: 235px;
 	height: 48px;
 	font-weight: bold;

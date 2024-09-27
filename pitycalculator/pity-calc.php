@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
 <div class="main-container">
     <div class="sidebar"> <!-- Anfang von div Sidebar -->
         <button onclick="window.location.href='../index.html'" class="sidebarbutton">Home</button>
@@ -28,8 +29,10 @@
 
         <input class="buttonrechner" type="submit" value="Berechne">
     </form>
+    </div>
 
-    </div>       </div>
+</div>
+
     <?php // Anfang von PHP
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Daten verarbeiten
