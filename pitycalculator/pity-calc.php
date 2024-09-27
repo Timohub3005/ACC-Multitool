@@ -27,7 +27,7 @@
         <label for="primogems">Primogems:</label>
         <input type="number" id="primogems" name="primogems" value="<?php echo isset($_POST['primogems']) ? intval($_POST['primogems']) : ''; ?>" required><br><br>
 
-        <input class="buttonrechner" type="submit" value="Berechne"><br><br>
+        <input class="buttonrechner" type="submit" value="Submit"><br><br>
 
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
