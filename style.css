@@ -1,8 +1,9 @@
 body {
     color: white;
     background-color: #1a1a1a;
-    font-family: Arial, Helvetica;
+	font-family: Arial, Helvetica, serif;, Helvetica, serif;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .main-container {
@@ -17,7 +18,7 @@ body {
 /*------------------*/
 
 .sidebar {
-	height: 100%;
+	height: 105%;
     width: 300px;
 	position: relative;
 	background-color: #111111;
@@ -25,6 +26,7 @@ body {
 	color: white;
 	flex-shrink: 0;
 	border-right: 3px solid #212121;
+	z-index: 1000;
 }
 
 .sidebarbutton, .sidebarbuttonopen {
@@ -91,16 +93,17 @@ footer {
 	color: white;
 	position: absolute;
 	bottom: -250px; /* set to bottom position */
-	width: 98.5%; /* so that there is no horizontal scrollbar */
+	width: 100%; /* so that there is no horizontal scrollbar */
 	height: auto;
 	border-top: 3px solid #212121;
+	z-index: 999;
 }
 
 .footer-links{
 	text-align: center;
     list-style-type: none;
-	font: arial;
-	font-size: 5;
+	font-family: Arial, Helvetica, serif;;
+	font-size: 16px;
 	color: white;
 }
 
@@ -113,16 +116,16 @@ footer {
 	text-align: center;
 	color: white;
     margin-top: 10px;
-	font: arial;
-	font-size: 3;
+	font-family: Arial, Helvetica, serif;;
+	font-size: 16px;
 }
 
 .footer-other {
 	text-align: center;
 	color: white;
     margin-top: 10px;
-	font: arial;
-	font-size: 3;
+	font-family: Arial, Helvetica, serif;;
+	font-size: 16px;
 }
 
 .footer-container {
