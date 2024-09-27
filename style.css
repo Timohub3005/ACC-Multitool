@@ -3,11 +3,16 @@ body {
 }
 
 .sidebar {
-    background-color: #111111;
-    color: white;
-    height: 1020px;
+	height: 100%;
     width: 300px;
-    margin-right: 10px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111111;
+	overflow-x: hidden;
+    padding-top: 20px;
+	color: white;
 }
 
 .screen {
