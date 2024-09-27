@@ -1,6 +1,6 @@
 .pitycalc1 {
-    padding: 20px;
     flex-grow: 1;
     background-color: #f1f1f1;
     position: relative;
+    font-family: Arial;
 }
