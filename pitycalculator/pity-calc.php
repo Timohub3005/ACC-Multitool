@@ -28,6 +28,7 @@
             <input type="number" id="primogems" name="primogems" required><br><br>
 
             <input class="buttonrechner" type="submit" value="Submit"><br><br>
+            
         </form>
     </div>
 
@@ -52,7 +53,7 @@
     </div>
 </div>
 
-        <?php /*
+        <?php 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $pity = isset($_POST['pity']) ? intval($_POST['pity']) : 0;
             $primogems = isset($_POST['primogems']) ? intval($_POST['primogems']) : 0;
@@ -73,7 +74,7 @@
         if (isset($hardwish) && $hardwish <= 0) {
             $hardwish = abs($hardwish);
             echo "<p>Hardpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Hardpity: $hardwish</p>";
-        } */
+        } 
         ?>
 
 </body>
