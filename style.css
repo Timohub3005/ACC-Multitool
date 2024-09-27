@@ -71,3 +71,53 @@ body {
 	background-color: #a40eb5;
 	cursor: pointer;
 }
+
+/*---------------------*/
+/* 		  Footer  	   */
+/* STYLE OF THE FOOTER */
+/*---------------------*/
+footer {
+	background-color: #111111;
+	padding: 10px;
+	color: white;
+	position: absolute;
+	bottom: -250px; /* set to bottom position */
+	width: 98.5%; /* so that there is no horizontal scrollbar */
+	height: auto;
+	border-top: 3px solid #212121;
+}
+
+.footer-links{
+	text-align: center;
+    list-style-type: none;
+	font: arial;
+	font-size: 5;
+	color: white;
+}
+
+.footer-link {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.footer-cr {
+	text-align: center;
+	color: white;
+    margin-top: 10px;
+	font: arial;
+	font-size: 3;
+}
+
+.footer-other {
+	text-align: center;
+	color: white;
+    margin-top: 10px;
+	font: arial;
+	font-size: 3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
