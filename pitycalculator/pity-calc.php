@@ -17,56 +17,61 @@
 
 
     <div class="pitycalc1">
-    <form action="" method= "POST">
+    <form action="" method="POST">
         <label for="pity">Pity:</label>
-        <input type="number" id="pity" name="pity" required><br><br>
+        <input type="number" id="pity" name="pity" value="<?php echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; ?>" required><br><br>
 
         <label for="fates">Intertwined Fates:</label>
-        <input type="number" id="fates" name="fates" required><br><br>
+        <input type="number" id="fates" name="fates" value="<?php echo isset($_POST['fates']) ? intval($_POST['fates']) : ''; ?>" required><br><br>
 
         <label for="primogems">Primogems:</label>
-        <input type="number" id="primogems" name="primogems" required><br><br>
+        <input type="number" id="primogems" name="primogems" value="<?php echo isset($_POST['primogems']) ? intval($_POST['primogems']) : ''; ?>" required><br><br>
 
-        <input class="buttonrechner" type="submit" value="Berechne">
-    </form>
-    </div>
+        <input class="buttonrechner" type="submit" value="Berechne"><br><br>
 
-</div>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Daten verarbeiten
+            $pity = isset($_POST['pity']) ? intval($_POST['pity']) : 0;
+            $primogems = isset($_POST['primogems']) ? intval($_POST['primogems']) : 0;
+            $fates = isset($_POST['fates']) ? intval($_POST['fates']) : 0;
 
-    <?php // Anfang von PHP
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Daten verarbeiten
-        $pity = isset($_POST['pity']) ? intval($_POST['pity']) : 0;
-        $primogems = isset($_POST['primogems']) ? intval($_POST['primogems']) : 0;
-        $fates = isset($_POST['fates']) ? intval($_POST['fates']) : 0;
-        
-        $fates = $fates + floor($primogems / 160);
-        $hardpity = 90 - $pity;
-        $softpity = 70 - $pity;
-        $hardwish = 90 - $pity - $fates;
-        $softwish = 70 - $pity - $fates;
+            $fates = $fates + floor($primogems / 160);
+            $hardpity = 90 - $pity;
+            $softpity = 70 - $pity;
+            $hardwish = 90 - $pity - $fates;
+            $softwish = 70 - $pity - $fates;
+        }
+        ?>
 
-        // Ergebnisse anzeigen
-        echo "<h2>Ergebnisse:</h2>";
-        echo "<p>Wishes bis zur Hardpity: $hardpity</p>";
-        echo "<p>Wishes bis zur Softpity: $softpity</p>";
-        echo "<p>Wishes verfügbar: $fates</p>";
+        <label for="hardpity">Wishes bis zur Hardpity:</label>
+        <input type="text" id="hardpity" value="<?php echo isset($hardpity) ? $hardpity : ''; ?>" readonly><br><br>
 
-        if ($softwish > 0) {
-            echo "<p>Wishes bis zur Hardpity mit den verfügbaren Wishes: $hardwish</p>";
-            echo "<p>Wishes bis zur Softpity mit den verfügbaren Wishes: $softwish</p>";
-        } elseif ($hardwish > 0) {
+        <label for="softpity">Wishes bis zur Softpity:</label>
+        <input type="text" id="softpity" value="<?php echo isset($softpity) ? $softpity : ''; ?>" readonly><br><br>
+
+        <label for="availablewishes">Wishes verfügbar:</label>
+        <input type="text" id="availablewishes" value="<?php echo isset($fates) ? $fates : ''; ?>" readonly><br><br>
+
+        <label for="hardwish">Wishes bis zur Hardpity mit den verfügbaren Wishes:</label>
+        <input type="text" id="hardwish" value="<?php echo isset($hardwish) && $hardwish > 0 ? $hardwish : 0; ?>" readonly><br><br>
+
+        <label for="softwish">Wishes bis zur Softpity mit den verfügbaren Wishes:</label>
+        <input type="text" id="softwish" value="<?php echo isset($softwish) && $softwish > 0 ? $softwish : 0; ?>" readonly><br><br>
+
+        <?php
+        if (isset($softwish) && $softwish <= 0) {
             $softwish = abs($softwish);
             echo "<p>Softpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Softpity: $softwish</p>";
-            echo "<p>Wishes bis zur Hardpity mit den verfügbaren Wishes: $hardwish</p>";
-        } else {
-            $softwish = abs($softwish);
+        }
+
+        if (isset($hardwish) && $hardwish <= 0) {
             $hardwish = abs($hardwish);
-            echo "<p>Softpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Softpity: $softwish</p>";
             echo "<p>Hardpity kann mit den verfügbaren Wishes erreicht werden, übrig nach Hardpity: $hardwish</p>";
         }
-    }
-    ?> <!-- Ende von PHP -->
+        ?>
+    </form>
+</div>
 
 </body>
 </html>
