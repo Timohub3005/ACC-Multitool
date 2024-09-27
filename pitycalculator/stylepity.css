@@ -1,6 +1,18 @@
+/*------------------*/
+/* Pity Calculator  */
+/*------------------*/
 .pitycalc1 {
     flex-grow: 1;
-    background-color: #f1f1f1;
+    border: 2px solid gray;
+    position: relative;
+    font-family: Arial;
+}
+
+/*------------------*/
+/* Wish Calculator  */
+/*------------------*/
+.wishcalc1 {
+    flex-grow: 1;
     position: relative;
     font-family: Arial;
 }

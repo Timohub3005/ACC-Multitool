@@ -24,7 +24,7 @@ body {
     padding-top: 20px;
 	color: white;
 	flex-shrink: 0;
-	border-right: 1px solid #212121;
+	border-right: 3px solid #212121;
 }
 
 .sidebarbutton, .sidebarbuttonopen {
