@@ -1,5 +1,9 @@
 body {
+	display:flex;
+    flex-wrap:wrap;
+    color: white;
     background-color: #1a1a1a;
+    font-family: Arial, Helvetica;
 }
 
 .sidebar {
@@ -15,13 +19,6 @@ body {
 	color: white;
 }
 
-.screen {
-    display:flex;
-    flex-wrap:wrap;
-    color: white;
-    background-color: #1a1a1a;
-    font-family: Arial, Helvetica;
-}
 
 .sidebarbutton {
     display: flex;

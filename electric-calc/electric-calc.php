@@ -7,15 +7,10 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div class="screen"> <!-- Anfang von div Screen -->
         <div class="sidebar"> <!-- Anfang von div Sidebar -->
             <button onclick="window.location.href='../index.html'" class="sidebarbutton">Home</button>
-            <button onclick="window.location.href='../pitycalculator/pity-calc.php'" class="sidebarbuttonopen">Pity-calculator</button>
-            <button onclick="window.location.href='electric-calc.php'" class="sidebarbutton">Electric-calcutor</button>
+            <button onclick="window.location.href='../pitycalculator/pity-calc.php'" class="sidebarbutton">Pity-calculator</button>
+            <button onclick="window.location.href='electric-calc.php'" class="sidebarbuttonopen">Electric-calcutor</button>
         </div> <!-- Ende von div Sidebar -->
-
-
-
-    </div> <!-- Ende von div Screen -->
 </body>
 </html>
