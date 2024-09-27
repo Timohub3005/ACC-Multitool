@@ -16,7 +16,7 @@
         <button onclick="window.location.href='../electric-calc/electric-calc.php'" class="sidebarbutton">Electric-calculator</button>
     </div> <!-- Ending of div Sidebar -->
 
-    <div class="pitycalc1"> <!-- Beginning of the first calculator --> <!-- Unused: <?php /* echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; */ ?> -->
+    <div class="pitycalc1"> <!-- Beginning of the first calculator --> <!-- Unused tag: <?php /* echo isset($_POST['pity']) ? intval($_POST['pity']) : ''; */ ?> -->
         <form action="pity-calc.php">
             <label for="pity">Pity:</label>
             <input type="number" id="pity" name="pity" required><br><br>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="wishcalc1">
-        <form action="pity-calc.php"> <!-- Unused: value="<?php /* echo isset($hardpity) ? $hardpity : ''; */ ?>"  -->
+        <form action="pity-calc.php"> <!-- Unused tag: value="<?php /* echo isset($hardpity) ? $hardpity : ''; */ ?>"  -->
             <label for="hardpity">Wishes until Hardpity:</label>
             <input type="text" id="hardpity" readonly><br><br>
 
