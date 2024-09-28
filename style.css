@@ -88,11 +88,12 @@ body {
 /* STYLE OF THE FOOTER */
 /*---------------------*/
 footer {
+	gap: 0px;
 	background-color: #111111;
 	padding: 10px;
 	color: white;
 	position: absolute;
-	bottom: -250px; /* set to bottom position */
+	bottom: -500px; /* set to bottom position */
 	width: 100%; /* so that there is no horizontal scrollbar */
 	height: auto;
 	border-top: 3px solid #212121;
@@ -105,6 +106,11 @@ footer {
 	font-family: Arial, Helvetica, serif;;
 	font-size: 16px;
 	color: white;
+	grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 2;
+   grid-column-end: 4;
 }
 
 .footer-link {
@@ -126,10 +132,19 @@ footer {
     margin-top: 10px;
 	font-family: Arial, Helvetica, serif;;
 	font-size: 16px;
+	grid-row-start: 1;
+   grid-column-start: 4;
+
+   grid-row-end: 2;
+   grid-column-end: 5;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+.footer-logo-txt, .footer-logo{
+	align-items: center;
+	text-align: center;
+	grid-row-start: 1;
+   	grid-column-start: 2;
+
+   	grid-row-end: 2;
+   	grid-column-end: 3;
 }
