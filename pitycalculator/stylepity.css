@@ -1,11 +1,13 @@
 /*------------------*/
 /* Pity Calculator  */
 /*------------------*/
+
+
 .pitycalc1{
     background-color: #111111;
     position: relative;
     font-family: Arial;
-    height: 270px;
+    height: 300px;
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -20,11 +22,7 @@
 /*------------------*/
 /* Wish Calculator  */
 /*------------------*/
-.wishcalc1 {
-    flex-grow: 1;
-    position: relative;
-    font-family: Arial;
-}
+
 
 .submitbuttoncalc {
     background-color: #1a1a1a;
