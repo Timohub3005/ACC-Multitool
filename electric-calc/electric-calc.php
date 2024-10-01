@@ -9,7 +9,7 @@
 <body>
         <div class="sidebar"> <!-- Beginning of div Sidebar -->
             <button onclick="window.location.href='../index.html'" class="sidebarbutton">Home</button>
-            <button onclick="window.location.href='../pitycalculator/pity-calc.php'" class="sidebarbutton">Pity-calculator</button>
+            <button onclick="window.location.href='../pitycalculator/genshincalc.php'" class="sidebarbutton">Genshin-Calculator</button>
             <button onclick="window.location.href='electric-calc.php'" class="sidebarbuttonopen">Electric-calculator</button>
         </div> <!-- Ending of div Sidebar -->
 </body>
