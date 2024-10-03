@@ -156,12 +156,17 @@ footer {
 
 .login-main-container {
 	justify-content: center;
-    height: 550px;
+    height: 600px;
     width: 25%;
     background: #212121;
+	margin-top: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5%;
 }
 
 .login-header{
+	justify-content: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	background: #a40eb5;
@@ -170,6 +175,9 @@ footer {
 	border-radius: 24px;
 	width: 250px;
 	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
 }
 
 .il_usr_pwd, .il_usr_name {
@@ -205,12 +213,17 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
-
-.al-usr_register {
+.usr_register, .usr_pwd_forgot {
 	margin: 20px;
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     cursor: pointer;
+}
+.hyperlink1 {
+	color: white;
+}
+.hyperlink1:hover {
+	color: #a40eb5;
 }

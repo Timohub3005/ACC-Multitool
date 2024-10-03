@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv='refresh' content='0; URL=http://Timohub3005.github.io/ACC-Multitool/index.html'> -->
     <title>ACC-Multitool</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <div class="main-container">
@@ -16,33 +16,31 @@
         <button onclick="window.location.href='electric-calc/electric-calc.php'" class="sidebarbutton">Electric-calculator</button>
     </div> <!-- Ending of div Sidebar -->
 
-        <h1> TEST </h1>
+    
     <div class="login-main-container">
         <div class="login-header">
             <h2>Login</h2>
         </div> <!-- LOGIN HEADER END -->
-        <form action="">
-            <div class="il_usr_name">
+        <form action="login.php">
+            <div class="il_usr_name"> <!-- il = i=input l=label -->
                 <label for="usr_name">Username: </label><br>
-                <input class="i_usr_name" type="text" name="username" placeholder="Username" id="usr_name"><br>
+                <input class="i_usr_name" type="text" name="username" placeholder="Username" id="usr_name" required><br>
             </div>
 
             <div class="il_usr_pwd">
                 <label for="usr_pwd">Password: </label><br>
-                <input class="i_usr_pwd" type="password" name="password" placeholder="Password" id="usr_pwd"><br><br>
+                <input class="i_usr_pwd" type="password" name="password" placeholder="Password" id="usr_pwd" required>
             </div>
-
+            <div class="usr_pwd_forgot">
+                <a href="password_forgot.php" class="hyperlink1">Forgot Password?</a>
+            </div> <!-- PASSWORD FORGOT END -->
             <button type="submit" class="login_button">Login</button>
-
-            <div class="al-usr_register">
-                <label for="">No Account?</label><br>
-                <a href="signup.html">Create one!</a>
-            </div> <!-- REGISTER END -->
-
         </form> <!-- FORM END -->
+        <div class="usr_register">
+            <a>No Account?</a><br>
+            <a href="signup.php" class="hyperlink1">Create one!</a>
+        </div> <!-- REGISTER END -->
     </div> <!-- LOGIN END -->
-
-
 </div> <!-- END MAIN CONTAINER-->
 
 
